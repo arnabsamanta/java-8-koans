@@ -41,7 +41,7 @@ public class AboutBase64 {
 	@Test
 	public void decodeFromBase64() {
 		// FIXME: Where do we get an encoded string that means "my-string"? One hint... look up!
-		byte[] decoded = Base64.getDecoder().decode("".getBytes());
+		byte[] decoded = Base64.getDecoder().decode("bXktc3RyaW5n".getBytes());
 
 		String myString = new String(decoded);
 		assertEquals("my-string", myString);
